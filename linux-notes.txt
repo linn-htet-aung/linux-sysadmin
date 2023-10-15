@@ -1,0 +1,89 @@
+Outline
+######################################
+01 - Introuduction
+02 - Lab Setup
+03 - Connections
+04 - Essential Commands
+05 - Permissions
+06 - Processes
+07 - User Management
+08 - Services
+09 - Networking
+10 - Disk Management
+11 - Package Installation
+12 - Cron Job   
+13 - NTP & Time Sync
+14 - Patching   
+
+01 - Introduction
+######################################
+- Course summary explanation
+
+
+02 - Lab Setup
+######################################
+debian    ->    ubuntu
+rpm       ->    centos
+
+https://www.virtualbox.org/
+https://www.osboxes.org/
+
+    fresh-ubuntu (osboxes/root, osboxes.org)
+        1. full-clone-1
+        2. full-clone-2
+        3. full-clone-n
+    fresh-centos (osboxes/root, osboxes.org)
+        1. full-clone-1
+        2. full-clone-2
+        3. full-clone-n
+
+09 - Networking
+######################################
+nmcli connection show
+nmcli connection up enp0s3
+
+# Config files
+    # centos
+    /etc/sysconfig/network-scripts/ifcfg-enp0s3 
+        DEVICE="enp0s3"
+        ONBOOT=yes
+        NETBOOT=yes
+        BOOTPROTO=dhcp
+        TYPE=Ethernet
+        NAME="enp0s3"
+
+    # ubuntu
+    /etc/netplan/....
+
+
+
+
+
+
+
+
+
+
+#################### Essential Commands ####################
+
+man -> The command in a terminal is used to display the manual pages for various commands.
+
+ls  -> List directory contents
+
+cd  -> Change current working directory
+
+cp  -> The cp command in terminal is used to copy files and directories from one location to another
+
+mv  -> The mv command in terminal is used to move or rename files and directories.
+
+rm  -> The rm command in terminal is used to remove files and directories.
+
+mkdir   -> The mkdir command in terminal is used to create new directories.
+
+rmdir   -> The rmdir command in terminal is used to remove empty directores.
+
+grep    -> The grep command in terminal is used to search for specific patterns or text withing files or output of other commands
+
+alias   -> An alias is an way to create custom shortcut 
+
+#################### Managing Processes ####################
